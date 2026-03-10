@@ -1,0 +1,21 @@
+# Large data files
+*.XPT
+*.xpt
+*.csv
+*.zip
+*.gz
+*.SAS7BDAT
+
+# Data folders (if you create one)
+data/
+raw_data/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Mac junk
+.DS_Store
