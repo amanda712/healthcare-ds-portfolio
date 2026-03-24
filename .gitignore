@@ -19,3 +19,6 @@ __pycache__/
 
 # Mac junk
 .DS_Store
+
+# Misc files
+brfss_project1_spec.md
