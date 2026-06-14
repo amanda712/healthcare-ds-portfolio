@@ -104,7 +104,7 @@ CREATE TABLE core.fact_survey_response (
 CREATE TABLE core.survey_response_footnote(
 	facility_id			VARCHAR(6),
 	measure_id			VARCHAR(30),
-	footnote_context	VARCHAR(15),
+	footnote_context	VARCHAR(30),
 	footnote_id			VARCHAR(3),
 	created_date		TIMESTAMPTZ NOT NULL DEFAULT now(),
 	modified_date		TIMESTAMPTZ NOT NULL DEFAULT now(),
