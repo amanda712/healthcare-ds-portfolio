@@ -48,7 +48,7 @@ WITH inserted AS (
 	    WHEN hcahps_measure_id LIKE '%_LINEAR_SCORE' THEN 'linear_mean'
     	WHEN hcahps_measure_id LIKE '%_STAR_RATING' THEN 'star_rating'
     	ELSE 'response_distribution'	
-	END::VARCHAR(20) AS response_type
+	END::VARCHAR(24) AS response_type
 	FROM staging.stg_hospital_patient_survey hps
 
 	RETURNING 1

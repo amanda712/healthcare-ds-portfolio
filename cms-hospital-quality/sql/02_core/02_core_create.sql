@@ -82,7 +82,7 @@ CREATE TABLE core.hospital_info_footnote (
 );
 
 
--- core.fact_survey_reponse
+-- core.fact_survey_response
 -- fact table
 CREATE TABLE core.fact_survey_response (
 	facility_id					VARCHAR(6),
@@ -92,7 +92,7 @@ CREATE TABLE core.fact_survey_response (
 	patient_survey_star_rating	INT,
 	hcahps_answer_percent		INT,
 	hcahps_linear_mean_value	DECIMAL,
-	response_type				VARCHAR(20),
+	response_type				VARCHAR(24),
 	created_date				TIMESTAMPTZ NOT NULL DEFAULT now(),
 	modified_date				TIMESTAMPTZ NOT NULL DEFAULT now(),
 	PRIMARY KEY(facility_id, measure_id)
