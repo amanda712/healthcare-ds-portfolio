@@ -1,7 +1,7 @@
 -- ------------------------------------------------------------
 -- Data Quality Check
 -- How many facilities have a non-null overall_rating in dim_hospital_info?
--- How many facilities have a non-null response_type of star_rating for H_HSP_RATING_STAR_RATING in fact_survey_response?
+-- How many facilities have a non-null response_type of star_rating for H_STAR_RATING in fact_survey_response?
 -- How many facilities have both?
 -- How many facilities are in dim_hospital_info but have no matching rows at all in fact_survey_response?
 -- ------------------------------------------------------------
@@ -19,7 +19,7 @@ WITH
     (
         SELECT	facility_id
         FROM	core.fact_survey_response
-        WHERE	measure_id = 'H_HSP_RATING_STAR_RATING' AND response_type = 'star_rating' AND patient_survey_star_rating IS NOT NULL
+        WHERE	measure_id = 'H_STAR_RATING' AND response_type = 'star_rating' AND patient_survey_star_rating IS NOT NULL
     ),
     facilities_w_both_ratings
     AS
